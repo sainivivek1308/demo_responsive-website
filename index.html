@@ -26,7 +26,7 @@
                 <img src="./assets/asset 1.png" alt="company-logo">
             </a>
 
-            <div class="nav-links ">
+            <div class="nav-links " id="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-links">Products</a></li>
                     <li><a href="#" class="hover-links">Customer</a></li>
@@ -36,12 +36,15 @@
                     <li><a href="#" class="hover-links primary-button">Sign up</a></li>
                 </ul>
             </div>
+            <a href="#" class="nav-toggle hover-link " id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
         </div>
     </nav>
     <header>
         <div class="container header-section flex">
             <div class="header-left">
-                <h1>Design Confidentiality</h1>
+                <h1>Design Confidently</h1>
                 <p>UsabilityHub is a remote user research platform that takes the guesswork out of design decisions by validating them with real users.</p>
                 <a href="#" class="primary-button get-button"> Get Started</a>
             </div>
@@ -148,7 +151,7 @@
     </section>
 
     <section class="big-features-section">
-        <div class="container flex big-feature-container big-container-2" style="flex-direction: row-reverse;">
+        <div class="container flex big-feature-container big-container-2 " id="designrow">
             <div class="feature-img">
                 <img src="./assets/asset 21.png" alt="other">
             </div>
@@ -197,8 +200,6 @@
                     </div>
 
                 </div>
-
-
             </div>
         </div>
     </section>
@@ -228,7 +229,7 @@
         </div>
     </section>
     <section class="extra-section">
-        <div class="container flex big-feature-container" style="flex-direction: row-reverse;">
+        <div class="container flex big-feature-container" id="designrow">
             <div class="feature-img">
                 <img src="./assets/asset 40.png" alt="other">
             </div>
@@ -271,7 +272,7 @@
         </div>
     </section>
     <footer>
-        <div class="container flex footer-container">
+        <div class="container flex footer-container media">
             <a href="#" class="company-logo">
                 <img src="./assets/asset 1.png" alt="comapny logo">
             </a>
@@ -306,7 +307,7 @@
         </div>
     </footer>
     <div class="subfooter">
-        <div class="container flex subfooter-container">
+        <div class="container flex subfooter-container ">
             <a href="#" class="hover-link">Privacy</a>
             <a href="#" class="hover-link">Terms & Condition</a>
             <a href="#" class="hover-link">Security information</a>
@@ -317,6 +318,13 @@
     </div>
 
     <script src="https://kit.fontawesome.com/7bc85fe95a.js" crossorigin="anonymous"></script>
+    <script>
+        const togglebutton = document.getElementById('nav-toggle');
+        const navlinks = document.getElementById('nav-links');
+        togglebutton.addEventListener('click', () => {
+            navlinks.classList.toggle('active');
+        })
+    </script>
 </body>
 
 </html>

@@ -98,6 +98,7 @@ ul {
 }
 
 .main-nav {
+    position: relative;
     justify-content: space-between;
     margin-top: 20px;
 }
@@ -109,6 +110,10 @@ ul {
 .nav-links ul {
     justify-content: right;
     gap: 30px;
+}
+
+.nav-toggle {
+    display: none;
 }
 
 .hover-links {
@@ -125,9 +130,10 @@ ul {
     border-radius: 6px;
     font-weight: 500;
     color: white !important;
-    padding: 13px 30px;
+    padding: 10px 50px;
     box-shadow: 0 0 2px var(--secondary-text-color);
     transition: 0.2s ease-out;
+    text-align: center;
 }
 
 .primary-button:hover {
@@ -139,7 +145,7 @@ ul {
     border-radius: 6px;
     font-weight: 500;
     color: var(--primary-text-color) !important;
-    padding: 12px 24px;
+    padding: 10px 25px;
     transition: 0.2s ease-out;
 }
 
@@ -162,7 +168,7 @@ header {
 }
 
 .header-right img {
-    width: 800px;
+    width: 100%;
 }
 
 .header-left h1 {
@@ -183,8 +189,9 @@ header {
 }
 
 .logos {
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .logo {
@@ -207,15 +214,16 @@ header {
 }
 
 .features-area {
+    margin-top: 20px;
     flex-wrap: wrap;
-    gap: 40px;
-    justify-content: space-between;
-    margin-top: var(--padding-inline-section);
+    gap: 20px;
+    justify-content: space-evenly;
+    padding: var(--padding-inline-section);
 }
 
 .features-card {
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     max-width: 30%;
     text-align: center;
 }
@@ -278,15 +286,20 @@ header {
     color: white !important;
 }
 
+#designrow {
+    flex-direction: row-reverse;
+}
+
 .examples-area {
     margin: 30px;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .examples-card {
     width: 23%;
     position: relative;
-    min-height: 300px;
+    height: 300px;
     color: white !important;
     background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(./assets/asset\ 36.jpeg);
     background-size: cover;
